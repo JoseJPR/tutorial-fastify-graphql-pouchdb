@@ -1,0 +1,17 @@
+{
+  "generator-rest-api-projects": {
+    "promptValues": {
+      "start": true,
+      "name": "NodeJS Application",
+      "version": "1.0.0",
+      "description": "",
+      "author": "",
+      "license": "ISC",
+      "server": "Fastify",
+      "host": "127.0.0.1",
+      "port": 3000,
+      "environments": [],
+      "pouchdb": true
+    }
+  }
+}

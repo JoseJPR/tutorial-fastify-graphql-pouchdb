@@ -1,0 +1,65 @@
+{
+  "name": "tutorial-fastify-graphql-pouchdb",
+  "version": "1.0.0",
+  "description": "",
+  "author": "",
+  "license": "ISC",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start:watch": "nodemon",
+    "start:local": "cp env/.env.local .env && tsc && node .",
+    "test": "cp env/.env.local .env && jest",
+    "create:seed": "cp env/.env.local .env && tsc && node ./dist/seed.js"
+  },
+  "devDependencies": {
+    "@types/jest": "^24.0.18",
+    "@types/node": "^12.11.1",
+    "@types/supertest": "^2.0.5",
+    "@typescript-eslint/eslint-plugin": "^2.5.0",
+    "@typescript-eslint/parser": "^2.5.0",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.19.1",
+    "jest": "^24.9.0",
+    "nodemon": "^1.19.4",
+    "supertest": "^4.0.2",
+    "ts-jest": "^24.1.0",
+    "ts-node": "^8.4.1",
+    "typescript": "^3.7.4",
+    "@types/pouchdb": "^6.4.0"
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "pretty-console-colors": "^1.0.8",
+    "fastify": "^2.11.0",
+    "pouchdb": "^7.1.1"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "ts"
+    ],
+    "rootDir": "src",
+    "testRegex": ".spec.ts$",
+    "transform": {
+      "^.+\\.(t|j)s$": "ts-jest"
+    },
+    "coverageDirectory": "../coverage",
+    "testEnvironment": "node"
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "**/*.test.ts",
+      "**/*.spec.ts",
+      ".git",
+      "node_modules"
+    ],
+    "watch": [
+      "src"
+    ],
+    "exec": "npm run start:local",
+    "ext": "ts"
+  }
+}
