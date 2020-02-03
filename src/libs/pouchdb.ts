@@ -15,6 +15,7 @@ class Main {
   db: any;
 
   constructor() {
+    console.log('process.env.POUCHDB_NAME', process.env.POUCHDB_NAME);
     this.db = new PouchDB(process.env.POUCHDB_NAME);
   }
 

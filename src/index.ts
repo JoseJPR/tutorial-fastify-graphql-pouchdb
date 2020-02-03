@@ -7,14 +7,23 @@
 import dotenv from 'dotenv';
 import fs from 'fs';
 import fastify from 'fastify';
+import GQL from 'fastify-gql';
+import { makeExecutableSchema } from 'graphql-tools';
 
 // Set config docenv by file.
 dotenv.config();
+
+import ArticleShemas from './shemas/article';
 
 /** Create Fastify App */
 const app: fastify.FastifyInstance = fastify({
   logger: process.env.LOGGER, // This param can be true or false for show logs.
 });
+
+app.register(GQL, {
+  schema: ArticleShemas,
+  graphiql: true,
+})
 
 /** Register all routes */
 const registerRoutes = async (): Promise<void> => {

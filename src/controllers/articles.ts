@@ -42,9 +42,9 @@ class Main {
   }
 
   /**
-   * @function getById
+   * @function getOne
    *
-   * @description Business logic for getById Article.
+   * @description Business logic for getOne Article.
    *
    * @author Jose J Perez Rivas | @JoseJPR
    *
