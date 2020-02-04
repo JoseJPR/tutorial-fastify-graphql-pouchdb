@@ -1,4 +1,4 @@
-# NodeJS Application | REST API [![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
+# Tutorial Fastify with GraphQL and PouchDB [![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
 
 ![Banner](assets/banner.jpg)
 
@@ -31,18 +31,30 @@ In order to work with this project, your local environment must have at least th
 
 ## 📐 How to work with this project
 
-To run the project locally and to develop you will have to execute the following command _(You will see a message on your terminal with the address and port of the local server)_:
+You have to do the following steps to be able to work with this project.
+
+### 1️⃣ Install NodeJS Dependencies
+To work with this project locally and to be able to deploy in different environments, it is necessary to install the NPM dependencies.
 
 ```bash
-# Run
-$npm run start:watch
+# Install npm dependencies
+$npm i
 ```
+
+### 2️⃣ Development
 
 To add the seed for /articles endpoints you will have to execute the following command:
 
 ```bash
 # Seed
 $npm run create:seed
+```
+
+To run the project locally and to develop you will have to execute the following command _(You will see a message on your terminal with the address and port of the local server)_:
+
+```bash
+# Run
+$npm run start:watch
 ```
 
 To run the unit tests of this project you will have to execute the following command:
