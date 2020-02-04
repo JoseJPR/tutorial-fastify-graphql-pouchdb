@@ -3,12 +3,6 @@
  * @description Wrapper class for define all schema for articles.
  */
 
-/** Import main dependences */
-import { makeExecutableSchema } from 'graphql-tools';
-
-/** Import all Resolvers */
-import resolvers from '../resolvers/article';
-
 const typeDefs = `
   type Article {
     _id: ID!
@@ -41,4 +35,4 @@ const typeDefs = `
   }
 `;
 
-export default makeExecutableSchema({ typeDefs, resolvers });
+export default typeDefs;

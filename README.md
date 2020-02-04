@@ -80,6 +80,14 @@ To run the unit tests of this project you will have to execute the following com
 $npm run test
 ```
 
+### 3️⃣ GraphQL
+
+🔮 If you want to work with the GraphQL IDE in your browser you can, for example, use the following url:
+
+http://localhost:3000/graphiql
+
+![graphiql](assets/graphiql.png)
+
 ## 🔌 Enviroments files
 
 If you have selected one or more environments you will see an env file for each environment that you can modify. The complete list of the .env files that you should have in the "env" folder should be:

@@ -13,17 +13,10 @@ import { makeExecutableSchema } from 'graphql-tools';
 // Set config docenv by file.
 dotenv.config();
 
-import ArticleShemas from './shemas/article';
-
 /** Create Fastify App */
 const app: fastify.FastifyInstance = fastify({
   logger: process.env.LOGGER, // This param can be true or false for show logs.
 });
-
-app.register(GQL, {
-  schema: ArticleShemas,
-  graphiql: true,
-})
 
 /** Register all routes */
 const registerRoutes = async (): Promise<void> => {
@@ -45,11 +38,37 @@ const registerRoutes = async (): Promise<void> => {
   });
 }
 
+/** Register GraphQL */
+const registerGraphQL = async (): Promise<void> => {
+  // Load files ts or js of endpoints folder for create routes.
+  const files = fs.readdirSync(`${__dirname}/config/collections`);
+  files.forEach(async (file: string) => {
+    try {
+      // Get extension file for only load .js or .ts files.
+      const ext = file.split('.');
+      if (ext.length === 2 && process.env.EXTENSIONS.split(',').includes(ext[ext.length - 1])) {
+        const collection = await import(`./config/collections/${file}`);
+        const schema = await import(`./shemas/${collection.default[0].shema}`);
+        const resolver = await import(`./resolvers/${collection.default[0].resolver}`);
+        app.register(GQL, {
+          schema: makeExecutableSchema({ typeDefs: schema.default, resolvers: resolver.default }),
+          graphiql: true,
+        })
+      }
+    } catch (err) {
+      console.error(err);
+      throw err;
+    }
+  });
+}
+
 /** Run the server! */
 (async (): Promise<void> => {
   try {
-    // Import all routes
+    // Import all Fastify routes.
     await registerRoutes();
+    // Import all GraphQL collections.
+    await registerGraphQL();
     // Set port and host from enviroment vars.
     await app.listen(Number(process.env.PORT), process.env.HOST);
     console.info(`server listening on ${process.env.HOST} with port ${process.env.PORT}`);
