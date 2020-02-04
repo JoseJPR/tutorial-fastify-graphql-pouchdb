@@ -72,7 +72,8 @@ const registerGraphQL = async (): Promise<void> => {
     // Set port and host from enviroment vars.
     await app.listen(Number(process.env.PORT), process.env.HOST);
     console.info(`🚀 Server listening on ${process.env.HOST} with port ${process.env.PORT}`);
-    console.info(`🔮 GraphiQL listening on /graphiql`);
+    console.info(`🔮 GraphiQL IDE listening on /graphiql`);
+    console.info(`🔗 GraphQL HTTP listening on /graphql`);
   } catch (err) {
     console.error(err);
   }
