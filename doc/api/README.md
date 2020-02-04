@@ -2,6 +2,28 @@
 
 ## Description
 
-Here you can add documentation of all versions of your Rest API.
+Here are several examples on how to work with a CRUD directly in Fastify and how with Fastify and GraphQL.
 
-You could, for example, add a postman collection in JSON format in the V1 folder that contains the examples for a complete CRUD.
+## Working with REST API CRUD
+
+**Get all Articles**
+
+**Get an article by Id**
+
+**Create new article**
+
+**Update an article by Id**
+
+**Delete an article by Id**
+
+## Working with GraphQL
+
+**Get all Articles**
+
+**Get an article by Id**
+
+**Create new article**
+
+**Update an article by Id**
+
+**Delete an article by Id**
