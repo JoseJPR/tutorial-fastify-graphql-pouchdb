@@ -82,9 +82,17 @@ $npm run test
 
 ### 3️⃣ GraphQL
 
-🔮 If you want to work with the GraphQL IDE in your browser you can, for example, use the following url:
+#### ➡️ To work with HTTP request from other project (for example Frontend ReactJS project) and work with GraphQL, use the following url:
 
-http://localhost:3000/graphiql
+> Base url for http request to graphpl endpoint. \
+  http://localhost:3000/graphql \
+  Example for get all articles from seed of PouchDB. \
+  http://localhost:3000/graphql?query={getAll{_id,title,resume,excerpt}}
+
+#### 🔮 If you want to work with the GraphiQL IDE in your browser you can, use the following url:
+
+> Base url GraphiQL IDE. \
+  http://localhost:3000/graphql
 
 ![graphiql](assets/graphiql.png)
 
