@@ -45,6 +45,16 @@ In order to work with this project, your local environment must have at least th
 * NodeJS Version: 12.xx
 * NPM Version: 6.12.0
 
+## Workflow HTTP REST API
+
+With these two graphs I want to expose the life cycle when we use the endpoints with GraphQL and without it.
+
+**Fastify and PouchDB**
+![Banner](assets/fastify-puchdb.png)
+
+**Fastify, GraphQL and PouchDB**
+![Banner](assets/fastify-graphql-puchdb.png)
+
 ## 📐 How to work with this project
 
 You have to do the following steps to be able to work with this project.
