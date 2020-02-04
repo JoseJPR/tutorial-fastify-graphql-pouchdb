@@ -2,9 +2,14 @@
 
 ![Banner](assets/banner.jpg)
 
-## Description
+## 🔖 Description
 
-REST API Project for NodeJS Application.
+REST API and GraphQL Project for NodeJS Application.
+
+The project strucutre has been created with Yeoman and Generator Standard REST API Projects.
+
+* [Yeoman](https://yeoman.io/)
+* [Yeoman | Generator Standard REST API Projects](https://github.com/JoseJPR/yeoman-generator-rest-api-projects)
 
 ## 📌 Methodologies and Guidelines
 
@@ -21,6 +26,14 @@ List of methodologies and tools used in this project for compliance with Quality
   [NPM SuperTest](https://www.npmjs.com/package/supertest)
 * Mozilla, Standard HTTP response status codes. \
   [HTTP Status MOZILLA](https://developer.mozilla.org/es/docs/Web/HTTP/Status)
+
+## ⚡️ Technologies and Tools
+
+The main libraries and tools used in this project are:
+
+* [Fastify](https://www.fastify.io/)
+* [GraphQL](https://graphql.org/)
+* [PouchDB](https://pouchdb.com/)
 
 ## ✅ Prerequisites
 
