@@ -40,7 +40,7 @@ const registerRoutes = async (): Promise<void> => {
 
 /** Register GraphQL */
 const registerGraphQL = async (): Promise<void> => {
-  // Load files ts or js of endpoints folder for create routes.
+  // Load files ts or js of collections folder for create routes.
   const files = fs.readdirSync(`${__dirname}/config/collections`);
   files.forEach(async (file: string) => {
     try {
