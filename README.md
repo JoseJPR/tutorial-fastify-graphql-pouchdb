@@ -7,12 +7,7 @@
 
 ## 🔖 Description
 
-Tutorial and Examples of how to work with Fastify, GraphQL and PouchDB.
-
-The project structure has been created with Yeoman and Generator Standard REST API Projects.
-
-* [Yeoman](https://yeoman.io/)
-* [Yeoman | Generator Standard REST API Projects](https://github.com/JoseJPR/yeoman-generator-rest-api-projects)
+Tutorial and Examples of how to work with Fastify, GraphQL and PouchDB. Working via REST API and GraphQL API with Postman and GraphiQL.
 
 ## 📹 Video Demo
 
@@ -40,6 +35,11 @@ List of methodologies and tools used in this project for compliance with Quality
   [HTTP Status MOZILLA](https://developer.mozilla.org/es/docs/Web/HTTP/Status)
 
 ## ⚡️ Technologies and Tools
+
+The project structure has been created with Yeoman and Generator Standard REST API Projects.
+
+* [Yeoman](https://yeoman.io/)
+* [Yeoman | Generator Standard REST API Projects](https://github.com/JoseJPR/yeoman-generator-rest-api-projects)
 
 The main libraries and tools used in this project are:
 
