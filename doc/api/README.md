@@ -4,6 +4,10 @@
 
 Here are several examples on how to work with a CRUD directly in Fastify, without GraphQL and how with Fastify and GraphQL.
 
+## 🚠 API Endpoints
+
+You can download this Postman collection with which you perform your tests in an easier way. [Collection](docs/api/postman-collection.json)
+
 ## Working with Fastify and without GraphQL
 
 ### Get All Articles

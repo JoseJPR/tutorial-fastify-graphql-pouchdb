@@ -140,6 +140,13 @@ If you have selected one or more environments you will see an env file for each 
 
 This project is based on the Fastify framework as a core for the development of the project structure and with custom libraries.
 
+## 🚠 API Endpoints
+
+| Version | URL | DOC | Postman |
+| ------- | --- | --- | ------- |
+| Fastify | /articles | [Readme](docs/api/#working-with-fastify-and-without-graphql)| [Collection](docs/api/postman-collection.json) |
+| Fastify + GraphQL | /articles | [Readme](docs/api/#working-with-fastify-and-graphql)| [Collection](docs/api/postman-collection.json) |
+
 ## ⛽️ Review and Update Dependences
 
 For review and update all npm dependences of this project you need install in global npm package "npm-check-updates" npm module.
