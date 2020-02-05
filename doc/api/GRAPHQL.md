@@ -26,7 +26,7 @@ HEADERS:
 }
 BODY:
 {
-	"query": "query{getAll{_id, title, resume, excerpt}}"
+  "query": "query{getAll{_id, title, resume, excerpt}}"
 }
 ```
 Return Example:
@@ -57,9 +57,9 @@ HEADERS:
 }
 BODY:
 {
-	"query": "query($_id:ID!){getOne(_id:$_id){_id, title, resume, excerpt}}",
-	"variables": {
-		"_id": [_id]
+  "query": "query($_id:ID!){getOne(_id:$_id){_id, title, resume, excerpt}}",
+  "variables": {
+    "_id": [_id]
 	}
 }
 VARIABLES: [_id] (Article ID)
@@ -88,7 +88,7 @@ HEADERS:
 }
 BODY: 
 {
-	"query": "mutation{create(input:{title:\"Test Title\", resume:\"Test Resume\", excerpt:\"Test Excerpt\"}){_id, title, resume, excerpt}}"
+  "query": "mutation{create(input:{title:\"Test Title\", resume:\"Test Resume\", excerpt:\"Test Excerpt\"}){_id, title, resume, excerpt}}"
 }
 ```
 Return Example:
@@ -115,9 +115,9 @@ HEADERS:
 }
 BODY: 
 {
-	"query": "mutation($_id:ID!){update(_id:$_id, input:{title:\"Test New Title\", resume:\"Test New Resume\", excerpt:\"Test New Excerpt\"}){_id, title, resume, excerpt}}",
+  "query": "mutation($_id:ID!){update(_id:$_id, input:{title:\"Test New Title\", resume:\"Test New Resume\", excerpt:\"Test New Excerpt\"}){_id, title, resume, excerpt}}",
   "variables": {
-		"_id": [_id]
+    "_id": [_id]
 	}
 }
 VARIABLES: [_id] (Article ID)
@@ -146,9 +146,9 @@ HEADERS:
 }
 BODY: 
 {
-	"query": "mutation($_id:ID!){delete(_id:$_id){ok, id}}",
+  "query": "mutation($_id:ID!){delete(_id:$_id){ok, id}}",
   "variables": {
-		"_id": [_id]
+    "_id": [_id]
 	}
 }
 VARIABLES: [_id] (Article ID)
