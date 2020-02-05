@@ -111,8 +111,10 @@ If you have selected one or more environments you will see an env file for each 
 |   ├── config              # Generic config.
 |   ├── controllers         # Controllers.
 |   ├── libs                # Custom libreries and tools.
+|   ├── resolvers           # GraphQL Resolvers.
 |   ├── routes              # Routes.
 |   ├── services            # Services.
+|   ├── shemas              # GraphQL Shemas.
 |   ├── types               # TypeScript types.
 |   └── ...
 └── ...
