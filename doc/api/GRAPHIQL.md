@@ -1,8 +1,10 @@
-# API Documentation | GraphiQL
+# 🔮 API Documentation | GraphiQL
 
 ## Description
 
-## 🔮 You can to work with the GraphiQL IDE in your browser
+GraphiQL is the reference implementation of this monorepo, GraphQL IDE, an official project under the GraphQL Foundation.
+
+## You can to work with the GraphiQL IDE in your browser
 
 > Base url GraphiQL IDE. \
   http://localhost:3000/graphiql

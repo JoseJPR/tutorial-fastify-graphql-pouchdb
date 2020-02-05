@@ -1,4 +1,4 @@
-# API Documentation | REST
+# 🚠 API Documentation | REST
 
 ## Description
 

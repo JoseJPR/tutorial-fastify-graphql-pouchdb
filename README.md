@@ -126,8 +126,16 @@ This project is based on the Fastify framework as a core for the development of 
 
 | Version | DOC | Postman |
 | ------- | --- | ------- |
-| REST | [Readme](./doc/api/REST.md)| [Collection](./doc/api/postman-collection-rest.json) |
-| GraphQL | [Readme](./doc/api/GRAPHQL.md)| [Collection](./doc/api/postman-collection-graphql.json) |
+| REST | [More Info](./doc/api/REST.md)| [Collection](./doc/api/postman-collection-rest.json) |
+| GraphQL | [More Info](./doc/api/GRAPHQL.md)| [Collection](./doc/api/postman-collection-graphql.json) |
+
+## 🔮 GraphiQL
+
+GraphiQL is the reference implementation of this monorepo, GraphQL IDE, an official project under the GraphQL Foundation.
+
+You can to work with the GraphiQL IDE in your browser.
+
+* [GraphiQL Info and Examples](./doc/api/GRAPHIQL.md)
 
 ## ⛽️ Review and Update Dependences
 

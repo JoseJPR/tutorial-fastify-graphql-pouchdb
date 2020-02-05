@@ -1,4 +1,4 @@
-# API Documentation | GraphQL
+# 🚠 API Documentation | GraphQL
 
 ## Description
 
