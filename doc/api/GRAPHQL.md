@@ -6,13 +6,6 @@ Here are several examples on how to work with Fastify and GraphQL.
 
 You can download this Postman collection with which you perform your tests in an easier way. [Collection](docs/api/postman-collection-graphql.json)
 
-## 🔮 You can to work with the GraphiQL IDE in your browser
-
-> Base url GraphiQL IDE. \
-  http://localhost:3000/graphiql
-
-![graphiql](../../assets/graphiql.png)
-
 ## Working with Fastify and GraphQL
 
 ### Get All Articles
@@ -149,7 +142,7 @@ BODY:
   "query": "mutation($_id:ID!){delete(_id:$_id){ok, id}}",
   "variables": {
     "_id": [_id]
-	}
+  }
 }
 VARIABLES: [_id] (Article ID)
 ```
