@@ -18,7 +18,7 @@ GraphiQL is the reference implementation of this monorepo, GraphQL IDE, an offic
 **Query**
 ```js
 query {
-   getAll {
+  getAll {
     _id
     title
     resume
@@ -65,8 +65,8 @@ mutation ($input: ArticleInput!) {
 {
   "input": {
     "title": "Test Title",
-  	"resume": "Test Resume",
-  	"excerpt": "Test Excerpt"
+    "resume": "Test Resume",
+    "excerpt": "Test Excerpt"
   }
 }
 ```
@@ -90,8 +90,8 @@ mutation ($_id: ID!, $input: ArticleInput!) {
   "_id": "5dd04cf0-0b7c-4021-ab16-803436a5aa46",
   "input": {
     "title": "Test New Title",
-  	"resume": "Test New Resume",
-  	"excerpt": "Test New Excerpt"
+    "resume": "Test New Resume",
+    "excerpt": "Test New Excerpt"
   }
 }
 ```
