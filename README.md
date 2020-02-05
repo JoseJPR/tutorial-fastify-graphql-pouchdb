@@ -3,7 +3,7 @@
 [![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
 [![Twitter: JoseJ_PR](https://img.shields.io/twitter/url?color=1991DA&label=Twitter%20%40JoseJ_PR&logo=twitter&logoColor=FFFFFF&style=flat-square&url=https%3A%2F%2Ftwitter.com%2FJoseJ_PR)](https://twitter.com/JoseJ_PR)
 
-![Banner](assets/banner.jpg)
+![Banner](./assets/banner.jpg)
 
 ## 🔖 Description
 
@@ -50,10 +50,10 @@ In order to work with this project, your local environment must have at least th
 With these two graphs I want to expose the life cycle when we use the endpoints with GraphQL and without it.
 
 **Fastify and PouchDB**
-![Banner](assets/fastify-puchdb.png)
+![Banner](./assets/fastify-puchdb.png)
 
 **Fastify, GraphQL and PouchDB**
-![Banner](assets/fastify-graphql-puchdb.png)
+![Banner](./assets/fastify-graphql-puchdb.png)
 
 ## 📐 How to work with this project
 
@@ -126,8 +126,8 @@ This project is based on the Fastify framework as a core for the development of 
 
 | Version | DOC | Postman |
 | ------- | --- | ------- |
-| REST | [Readme](docs/api/REST.md)| [Collection](docs/api/postman-collection.json) |
-| GraphQL | [Readme](docs/api/GRAPHQL.md)| [Collection](docs/api/postman-collection.json) |
+| REST | [Readme](./docs/api/REST.md)| [Collection](./docs/api/postman-collection.json) |
+| GraphQL | [Readme](./docs/api/GRAPHQL.md)| [Collection](./docs/api/postman-collection.json) |
 
 ## ⛽️ Review and Update Dependences
 
