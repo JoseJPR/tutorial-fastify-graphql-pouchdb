@@ -104,7 +104,7 @@ $npm run test
 #### 🔮 If you want to work with the GraphiQL IDE in your browser you can, use the following url:
 
 > Base url GraphiQL IDE. \
-  http://localhost:3000/graphql
+  http://localhost:3000/graphiql
 
 ![graphiql](assets/graphiql.png)
 
