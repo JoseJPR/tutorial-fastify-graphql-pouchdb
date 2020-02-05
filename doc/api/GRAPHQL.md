@@ -1,10 +1,17 @@
-# API | GraphQL Documentation
+# API Documentation | GraphQL
 
 ## Description
 
-Here are several examples on how to work with a CRUD directly in Fastify, without GraphQL and how with Fastify and GraphQL.
+Here are several examples on how to work with Fastify and GraphQL.
 
 You can download this Postman collection with which you perform your tests in an easier way. [Collection](docs/api/postman-collection-graphql.json)
+
+## 🔮 You can to work with the GraphiQL IDE in your browser
+
+> Base url GraphiQL IDE. \
+  http://localhost:3000/graphiql
+
+![graphiql](../../assets/graphiql.png)
 
 ## Working with Fastify and GraphQL
 

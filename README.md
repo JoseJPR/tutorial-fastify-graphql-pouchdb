@@ -90,24 +90,6 @@ To run the unit tests of this project you will have to execute the following com
 $npm run test
 ```
 
-### 3️⃣ GraphQL
-
-#### 🔗 To work with HTTP request from other project (for example Frontend ReactJS project) and work with GraphQL, use the following url:
-
-> Base url for http request to graphpl endpoint. \
-  http://localhost:3000/graphql \
-  Example for get all articles from seed of PouchDB. \
-  http://localhost:3000/graphql?query={getAll{_id,title,resume,excerpt}}
-
-![graphql-http](assets/graphql-http.png)
-
-#### 🔮 If you want to work with the GraphiQL IDE in your browser you can, use the following url:
-
-> Base url GraphiQL IDE. \
-  http://localhost:3000/graphiql
-
-![graphiql](assets/graphiql.png)
-
 ## 🔌 Enviroments files
 
 If you have selected one or more environments you will see an env file for each environment that you can modify. The complete list of the .env files that you should have in the "env" folder should be:

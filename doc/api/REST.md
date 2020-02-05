@@ -1,12 +1,12 @@
-# API | REST Documentation
+# API Documentation | REST
 
 ## Description
 
-Here are several examples on how to work with a CRUD directly in Fastify, without GraphQL and how with Fastify and GraphQL.
+Here are several examples on how to work with a CRUD in Fastify.
 
 You can download this Postman collection with which you perform your tests in an easier way. [Collection](docs/api/postman-collection-rest.json)
 
-## Working with Fastify and without GraphQL
+## Working with Fastify
 
 ### Get All Articles
 
