@@ -15,7 +15,8 @@ GraphiQL is the reference implementation of this monorepo, GraphQL IDE, an offic
 
 ### Get All Articles
 
-```any
+**Query**
+```js
 query {
    getAll {
     _id
@@ -28,6 +29,23 @@ query {
 
 ### Get Article by ID
 
+**Query**
+```js
+query ($_id:ID!){
+  getOne (_id:$_id) {
+    _id
+    title
+    resume
+    excerpt
+  }
+}
+```
+**Variables**
+```js
+{
+  "_id": "5dd04cf0-0b7c-4021-ab16-803436a5aa46"
+}
+```
 ```any
 query {
   getOne (
@@ -89,7 +107,7 @@ mutation {
 }
 ```
 
-## 🎁 Bonus: Too you can use Alias and Fragments 
+## 🎁 Bonus: You can use Alias and Fragments too
 
 **Alias**
 ```any
