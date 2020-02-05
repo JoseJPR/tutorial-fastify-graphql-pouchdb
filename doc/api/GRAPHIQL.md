@@ -31,7 +31,7 @@ query {
 
 **Query**
 ```js
-query ($_id:ID!){
+query ($_id:ID!) {
   getOne (_id:$_id) {
     _id
     title
@@ -46,11 +46,13 @@ query ($_id:ID!){
   "_id": "5dd04cf0-0b7c-4021-ab16-803436a5aa46"
 }
 ```
-```any
-query {
-  getOne (
-    _id: "0f3ab5f7-8e71-4cfb-ae43-e34885453bbd"
-  ) {
+
+### Create Article
+
+**Query**
+```js
+mutation ($input: ArticleInput!) {
+  create (input: $input) {
     _id
     title
     resume
@@ -58,36 +60,23 @@ query {
   }
 }
 ```
-
-### Create Article
-```any
-mutation {
-  create (
-    input: {
-      title: "Test Title"
-      resume: "Test Resume"
-      excerpt: "Test Excerpt"
-    }
-  ) {
-    _id
-    title
-    resume
-    excerpt
+**Variables**
+```js
+{
+  "input": {
+    "title": "Test Title",
+  	"resume": "Test Resume",
+  	"excerpt": "Test Excerpt"
   }
 }
 ```
 
 ### Update Article by ID
-```any
-mutation {
-  update (
-    _id: "0f3ab5f7-8e71-4cfb-ae43-e34885453bbd"
-    input: {
-      title: "Test New Title"
-      resume: "Test New Resume"
-      excerpt: "Test New Excerpt"
-    }
-  ) {
+
+**Query**
+```js
+mutation ($_id: ID!, $input: ArticleInput!) {
+  update (_id: $_id, input: $input) {
     _id
     title
     resume
@@ -95,15 +84,33 @@ mutation {
   }
 }
 ```
+**Variables**
+```js
+{
+  "_id": "5dd04cf0-0b7c-4021-ab16-803436a5aa46",
+  "input": {
+    "title": "Test New Title",
+  	"resume": "Test New Resume",
+  	"excerpt": "Test New Excerpt"
+  }
+}
+```
 
 ### Delete Article by ID
-```any
-mutation {
-  delete (
-    _id: "5dfa01b7-0ad9-4d97-a389-d27d3514d068"
-  ) {
+
+**Query**
+```js
+mutation ($_id: ID!) {
+  delete (_id: $_id) {
+    ok
     id
   }
+}
+```
+**Variables**
+```js
+{
+  "_id": "5dd04cf0-0b7c-4021-ab16-803436a5aa46"
 }
 ```
 
