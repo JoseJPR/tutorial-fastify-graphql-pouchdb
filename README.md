@@ -7,9 +7,9 @@
 
 ## 🔖 Description
 
-REST API and GraphQL Project for NodeJS Application.
+Tutorial and Examples of how to work with Fastify, GraphQL and PouchDB.
 
-The project strucutre has been created with Yeoman and Generator Standard REST API Projects.
+The project structure has been created with Yeoman and Generator Standard REST API Projects.
 
 * [Yeoman](https://yeoman.io/)
 * [Yeoman | Generator Standard REST API Projects](https://github.com/JoseJPR/yeoman-generator-rest-api-projects)
