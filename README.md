@@ -140,12 +140,12 @@ If you have selected one or more environments you will see an env file for each 
 
 This project is based on the Fastify framework as a core for the development of the project structure and with custom libraries.
 
-## 🚠 API Endpoints
+## 🚠 API Documentation
 
-| Version | URL | DOC | Postman |
-| ------- | --- | --- | ------- |
-| Fastify | /articles | [Readme](docs/api/#working-with-fastify-and-without-graphql)| [Collection](docs/api/postman-collection.json) |
-| Fastify + GraphQL | /articles | [Readme](docs/api/#working-with-fastify-and-graphql)| [Collection](docs/api/postman-collection.json) |
+| Version | DOC | Postman |
+| ------- | --- | ------- |
+| REST | [Readme](docs/api/REST.md)| [Collection](docs/api/postman-collection.json) |
+| GraphQL | [Readme](docs/api/GRAPHQL.md)| [Collection](docs/api/postman-collection.json) |
 
 ## ⛽️ Review and Update Dependences
 
