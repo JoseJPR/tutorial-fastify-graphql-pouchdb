@@ -60,7 +60,7 @@ BODY:
   "query": "query($_id:ID!){getOne(_id:$_id){_id, title, resume, excerpt}}",
   "variables": {
     "_id": [_id]
-	}
+  }
 }
 VARIABLES: [_id] (Article ID)
 ```
@@ -118,7 +118,7 @@ BODY:
   "query": "mutation($_id:ID!){update(_id:$_id, input:{title:\"Test New Title\", resume:\"Test New Resume\", excerpt:\"Test New Excerpt\"}){_id, title, resume, excerpt}}",
   "variables": {
     "_id": [_id]
-	}
+  }
 }
 VARIABLES: [_id] (Article ID)
 ```
