@@ -1,0 +1,185 @@
+{
+	"info": {
+		"_postman_id": "4a7eb54a-e45c-40a1-a611-f066a587cb13",
+		"name": "API Documentation GRAPHQL",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GraphQL - [POST] Get All Articles",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"query\": \"query{getAll{_id, title, resume, excerpt}}\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/graphql",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"graphql"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GraphQL - [POST] Get Article by Id",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"query\": \"query($_id:ID!){getOne(_id:$_id){_id, title, resume, excerpt}}\",\n\t\"variables\": {\n\t\t\"_id\": \"3f7191f3-15f0-47c9-8931-d6c8a0260a83\"\n\t}\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/graphql",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"graphql"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GraphQL - [POST] Create Article",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"query\": \"mutation{create(input:{title:\\\"Test Title\\\", resume:\\\"Test Resume\\\", excerpt:\\\"Test Excerpt\\\"}){_id, title, resume, excerpt}}\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/graphql",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"graphql"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GraphQL - [POST] Update Article by Id",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"query\": \"mutation($_id:ID!){update(_id:$_id, input:{title:\\\"Test New Title\\\", resume:\\\"Test New Resume\\\", excerpt:\\\"Test New Excerpt\\\"}){_id, title, resume, excerpt}}\",\n\t\"variables\": {\n\t\t\"_id\": \"03ad1171-d10a-4e0a-ac85-e4842390b12b\"\n\t}\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/graphql",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"graphql"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GraphQL - [POST] Delete Article by Id",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"query\": \"mutation($_id:ID!){delete(_id:$_id){ok, id}}\",\n\t\"variables\": {\n\t\t\"_id\": \"03ad1171-d10a-4e0a-ac85-e4842390b12b\"\n\t}\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/graphql",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"graphql"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

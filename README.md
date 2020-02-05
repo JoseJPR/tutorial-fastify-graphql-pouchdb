@@ -126,8 +126,8 @@ This project is based on the Fastify framework as a core for the development of 
 
 | Version | DOC | Postman |
 | ------- | --- | ------- |
-| REST | [Readme](./docs/api/REST.md)| [Collection](./docs/api/postman-collection.json) |
-| GraphQL | [Readme](./docs/api/GRAPHQL.md)| [Collection](./docs/api/postman-collection.json) |
+| REST | [Readme](./doc/api/REST.md)| [Collection](./doc/api/postman-collection-rest.json) |
+| GraphQL | [Readme](./doc/api/GRAPHQL.md)| [Collection](./doc/api/postman-collection-graphql.json) |
 
 ## ⛽️ Review and Update Dependences
 

@@ -1,0 +1,157 @@
+{
+	"info": {
+		"_postman_id": "5faa6b25-e9ca-43a8-8e68-23ee3bbc232b",
+		"name": "API Documentation REST",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "[GET] Get All Articles",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/articles",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"articles"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[GET] Get Article by Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/articles/3f7191f3-15f0-47c9-8931-d6c8a0260a83",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"articles",
+						"3f7191f3-15f0-47c9-8931-d6c8a0260a83"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[POST] Create Article",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"title\": \"Test title\",\n\t\"resume\": \"test resume\",\n\t\"excerpt\": \"test excerpt\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/articles",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"articles"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[PUT] Update Article by Id",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"title\": \"Test title\",\n\t\"resume\": \"test resume\",\n\t\"excerpt\": \"test excerpt\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/articles/a1c89766-b636-44bf-94c2-30657b7a59e0",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"articles",
+						"a1c89766-b636-44bf-94c2-30657b7a59e0"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[DELETE] Delete Article by Id",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/articles/a1c89766-b636-44bf-94c2-30657b7a59e0",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"articles",
+						"a1c89766-b636-44bf-94c2-30657b7a59e0"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
