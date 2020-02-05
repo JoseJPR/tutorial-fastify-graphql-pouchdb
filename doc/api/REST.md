@@ -55,9 +55,9 @@ HEADERS:
 }
 BODY: 
 {
-	"title": "Test Title",
-	"resume": "Test Resume",
-	"excerpt": "Test Excerpt"
+  "title": "Test Title",
+  "resume": "Test Resume",
+  "excerpt": "Test Excerpt"
 }
 ```
 Return Example:
@@ -82,9 +82,9 @@ HEADERS:
 }
 BODY: 
 {
-	"title": "Test New Title",
-	"resume": "Test New Resume",
-	"excerpt": "Test New Excerpt"
+  "title": "Test New Title",
+  "resume": "Test New Resume",
+  "excerpt": "Test New Excerpt"
 }
 ```
 Return Example:
