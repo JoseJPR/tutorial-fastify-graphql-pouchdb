@@ -13,10 +13,17 @@ Tutorial and Examples of how to work with Fastify, GraphQL and PouchDB. Working 
 
 The following videos shows how you can work with this project and execute request to the REST API from Postman and to the GraphQL API from Postman and from GraphiQL.
 
-[![Video 1](./assets/video-instalacion-npm-creacion-semillas-primer-npm-run-start.jpg)](https://youtu.be/yGok2F_uwnc)
-[![Video 2](./assets/video-como-trabajar-con-la-rest-api-desde-postman.jpg)](https://youtu.be/e4fMmqM9wmU)
-[![Video 3](./assets/video-como-trabajar-con-api-graphql-desde-postman.jpg)](https://youtu.be/XVdTICKYBjs)
-[![Video 4](./assets/video-como-trabajar-con-la-api-graphql-desde-graphiql.jpg)](https://youtu.be/ohtADcIkfQI)
+* Run NPM Install and create seed for the first Start.
+[![Video 1](./assets/youtube.svg)](https://youtu.be/yGok2F_uwnc)
+
+* How work with Rest API via Postman
+[![Video 2](./assets/youtube.svg)](https://youtu.be/e4fMmqM9wmU)
+
+* How work with GraphQL API via Postman
+[![Video 3](./assets/youtube.svg)](https://youtu.be/XVdTICKYBjs)
+
+* How work with GraphQL API via GraphiQL
+[![Video 4](./assets/youtube.svg)](https://youtu.be/ohtADcIkfQI)
 
 ## 📌 Methodologies and Guidelines
 
